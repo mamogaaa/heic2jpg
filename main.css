@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+}
+
+.page-container {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.page-container > .col {
+    flex: 0;
+    white-space: nowrap;
+}
+
+.drop-box {
+    visibility: hidden;
+    position: fixed;
+    top: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    border: 6px dashed #cecece;
+    background: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #cecece;
+}
+
+.drop-box.drop-box-active {
+    visibility: visible;
+}
+
+.image-list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem;
+}
