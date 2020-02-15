@@ -82,7 +82,7 @@ class HeicImageFile {
                     `}
                 </div>
                 <div class="card-footer p-2">
-                    <a class="btn btn-primary btn-block btn-sm" href="${this.url}" download="${this.file.name}.jpg">Download</a>
+                    <a class="btn btn-primary btn-block btn-sm ${this.loading ? 'disabled' : ''}" href="${this.url}" download="${this.file.name}.jpg">Download</a>
                 </div>
             </div>
         `
